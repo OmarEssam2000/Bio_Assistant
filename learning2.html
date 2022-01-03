@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title> bio assistant</title>
+            <link rel="stylesheet" href="css/bootstrap.min.css"/>
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/hover-min.css" />
+        <link rel="stylesheet" href="css/lightGallery.css" />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    
+        <style>
+    
+            *{margin: 0;padding: 0; }
+           .bg-blue{background-color: #45748C;}
+           .bg-red{background-color: #AD5258;}
+           .bg-yellow{background-color: #EF972C;}
+           .back{background-image: url(images/back.jpg);*margin: 0;*padding: 0; background-size: 100%100%; background-attachment: fixed;background-repeat: no-repeat;}
+           .txtblue{color: #45748C;}
+           .fontlogo{ font-family: Segoe Print;color: #45748C;font-size: 66;}                           
+          .searchbox{width: 340px;height: 50px;padding: 0 25px;border-radius: 10px 0 0 10px;} 
+          .searchbtn{border-radius: 0 10px 10px 0;height:50px ;width: 150px; ;} 
+          .put{  z-index: 1; background-color: white;border-radius: 100%;border: 1px solid #45748C ; text-align: center;margin-bottom:90px ;position: absolute; font-size: large; width: 80px;height: 80px;}                         
+          .btnn{ width: 120px;height: 100px; background-color:white;color: #45748C; font-size: 13px;text-align: center;border-radius: 4px;}
+          .btnn:hover{ color: white;background-color: #45748C;border:3px solid white;font-size: 15px;}
+          .findbtn:hover{border: 4px solid #AD5258;}
+       
+        </style>
+    
+        <title>tools page</title>
+    </head>
+    
+    <body class="back">
+        <!--navbar-->
+        <header>
+            <nav class="navbar  navbar-light bg-light  ">
+                <div class=" container-fluid " >
+                    <div class=" d-inline-flex ">
+                        
+                        <img src="images/logo.png" width="60" height="60" class="ml-3 " /> 
+                        <a class="navbar-brand txtblue mb-1"><h3 class="fontlogo" ><b>Bio Assistant</b> </h3></a>
+                     </div>
+                  <div class="navbar " style="border: red; background-color:transparent;">
+                      <nav class=" navbar  navbar-light bg-light">
+                            <div class=" container-fluid">
+                              <form class="d-inline-flex">
+                                <input class="form-control me-1 text-dark searchbox" type="search" placeholder="Search" aria-label="Search" title="Search !" style="width: 4cm;">
+                                <button class="btn bg-blue searchbtn" type="submit" style="width: 1.6cm;"><img src="images/search icon.png" width="20" height="20"></button>
+                              </form>
+                              <a href="index.html" style="text-decoration : none; "><img src="images/profile.png " width="35" height="35" style="margin-right: 6px;" class="ml-5 rounded-circle" title="Sign Up !" ><span class="fw-bolder text-primary">Logout !</span></a>
+                           </div>
+                       </nav>
+                  </div>
+                </div>
+            </nav>
+         </header>
+    
+        <!--Start Section Nav-->
+        <section class="navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    <ul class="order d-flex justify-content-between align-items-center">
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a href="home.php">Bioinformatics experiments</a></li>
+                        <li class="bg-white" style="border-radius:8px;" ><a href="learning2.html" style="color: #45748C;">Learning</a></li>
+                        
+
+                    </ul>
+                </div>
+    
+                <div>
+                    <ul class="list d-flex justify-content-between align-items-center">
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End of section nav-->
+
+
+
+<!--tool card-->
+
+ <!--tool card-->
+
+ <div class="bg-white mt-5  container-lg p-5 " id="tools">
+    <fieldset class=" container card"  >
+           <legend class=" w-50"><h1 class="txtblue font-weight-bold ml-5 ">Bioinformatics Tools:</h1> </legend>
+           <div class="card bg-blue mt-4  ml-4 mr-4">
+                   <h5 class="text-white m-2 "style="text-align: left;">Bioinformatics tools are software programs that are designed for extracting the meaningful information from the mass of molecular biology / biological databases & to carry out sequence or structural analysis. There are data-mining software that retrieves data from genomic sequence databases and also visualization tools to analyze and retrieve information from proteomic databases. These can be classified as homology and similarity tools, protein functional analysis tools, sequence analysis tools and miscellaneous tools.</h5>
+          </div>
+         
+        <section class="container" style="margin-left: -1.5cm;">
+            <div class="container my-3 py-5 text-center">
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row ">
+                            <div class="col-lg-8 d-flex  col-md-7">
+                               
+                                <div class="card m-5 col-5" >
+                                    <a target="_blank" href="https://www.longdom.org/scholarly/bioinformatics-tools-journals-articles-ppts-list-2872.html" style="text-decoration-line: none;" >
+                                    <div class="card-body">
+                                        <img src="images/c5.jpg" alt="" class="rounded-circle img-fluid h-75 w-75 mb-3">
+                                        <h3 class="txtblue font-weight-bold" id="#main">Bioinformatics Tools</h3>
+                                    </div>
+                                    <div class="card-footer bg-white text-black-50">
+                                        <p style="text-align: left;">Bioinformatics tools are software programs that are designed for extracting the meaningful information from the mass of molecular biology / biological databases & to carry out sequence or structural analysis.These can be classified as homology and similarity tools, protein functional analysis tools, sequence analysis tools and miscellaneous tools. </p>
+                                       </div>
+                                    </a>
+                                </div>
+        
+                                <div class="card m-5 col-5">
+                                    <a target="_blank" href="https://www.thermofisher.com/search/results?query=analysis%20tool&focusarea=Search%20All"style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/c5.jpg" alt="" class="rounded-circle w-75 h-75 img-fluid mb-3">
+                                       <h3 class="txtblue font-weight-bold">Thermo fisher scientific </h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p  style="text-align: left;">A biological research paper is a form of communication in which the investigator succinctly presents and interprets data collected in an investigation. Writing such papers is similar to the
+                                        writing in other scientific disciplines except that the format will differ as will the criteria for grading. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               <div class="card m-5 col-5" >
+                                 <a target="_blank" href="https://think.f1000research.com/software-tools/?utm_source=CPB&utm_medium=cms&utm_campaign=JQC19508&utm_source=CPB&utm_medium=cms&utm_campaign=JQC19509" style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/c5.jpg" alt="" class="rounded-circle w-100 h-75 img-fluid  mb-3">
+                                       <h3 class="txtblue font-weight-bold">Publish your software tool article with F1000Research
+                                    </h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p style="text-align: left;">DNA sequencing process utilizes biochemical methods in order to determine the correct order of nucleotide bases in a DNA macromolecule using sequencing machines. Next Generation Sequencing Technologies emerged and changed the view of the analysis and understanding of living beings. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               
+                               
+                    </div>
+                </div>
+            </div>
+        </section>
+     </fieldset>
+ </div>
+
+
+
+<!--Papers & Road map card-->
+ <div class="bg-white mt-5  container-lg p-5 " id="papers">
+    <fieldset class=" container card"  >
+        <legend class=" w-50"><h1 class="txtblue font-weight-bold ml-5 ">Papers & Road map:</h1> </legend>
+        <div class="card bg-blue mt-4  ml-4 mr-4">
+            <h5 class="text-white m-2 "style="text-align: left;">A biological research paper is a form of communication in which the investigator succinctly
+                presents and interprets data collected in an investigation. Writing such papers is similar to the
+                writing in other scientific disciplines except that the format will differ as will the criteria for
+                grading. For individual biology courses, students should use this document as a guide as well as
+                refer to course guidelines for individual course assignments. </h5>
+        </div>
+        <section class="container" style="margin-left: -1.5cm;">
+            <div class="container my-3 py-5 text-center">
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row ">
+                            <div class="col-lg-8 d-flex  col-md-7">
+                               
+                                <div class="card m-5 col-5" >
+                                    <a target="_blank" href="https://www.longdom.org/scholarly/bioinformatics-tools-journals-articles-ppts-list-2872.html" style="text-decoration-line: none;" >
+                                    <div class="card-body">
+                                        <img src="images/c4.jpg" alt="" class="rounded-circle img-fluid h-75 w-75 mb-3">
+                                        <h3 class="txtblue font-weight-bold" id="#main">Physics of Life Thermodynamics 3. Ecology and Evolution</h3>
+                                    </div>
+                                    <div class="card-footer bg-white text-black-50">
+                                        <p style="text-align: left;">Bioinformatics tools are software programs that are designed for extracting the meaningful information from the mass of molecular biology / biological databases & to carry out sequence or structural analysis.These can be classified as homology and similarity tools, protein functional analysis tools, sequence analysis tools and miscellaneous tools. </p>
+                                       </div>
+                                    </a>
+                                </div>
+        
+                                <div class="card m-5 col-5">
+                                    <a target="_blank" href="https://www.thermofisher.com/search/results?query=analysis%20tool&focusarea=Search%20All"style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/c4.jpg" alt="" class="rounded-circle w-75 h-75 img-fluid mb-3">
+                                       <h3 class="txtblue font-weight-bold">Research Papers on Bioinformatics: Biology and Computer Science?</h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p  style="text-align: left;">A biological research paper is a form of communication in which the investigator succinctly presents and interprets data collected in an investigation. Writing such papers is similar to the
+                                        writing in other scientific disciplines except that the format will differ as will the criteria for grading. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               <div class="card m-5 col-5" >
+                                 <a target="_blank" href="https://think.f1000research.com/software-tools/?utm_source=CPB&utm_medium=cms&utm_campaign=JQC19508&utm_source=CPB&utm_medium=cms&utm_campaign=JQC19509" style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/c4.jpg" alt="" class="rounded-circle w-100 h-75 img-fluid  mb-3">
+                                       <h3 class="txtblue font-weight-bold">BIOINFORMATICS IEEE PAPER 2018
+                                    </h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p style="text-align: left;">DNA sequencing process utilizes biochemical methods in order to determine the correct order of nucleotide bases in a DNA macromolecule using sequencing machines. Next Generation Sequencing Technologies emerged and changed the view of the analysis and understanding of living beings. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               
+                               
+                    </div>
+                </div>
+            </div>
+        </section>
+     </fieldset>
+ </div>
+
+
+
+<!--machines card-->
+ <div class="bg-white mt-5  container-lg p-5 " id="machines">
+    <fieldset class=" container card"  >
+        <legend class=" w-50"><h1 class="txtblue font-weight-bold ml-5 ">Sequencig Machines:</h1> </legend>
+        <div class="card bg-blue mt-4  ml-4 mr-4">
+            <h5 class="text-white m-2 "style="text-align: left;">DNA sequencing process utilizes biochemical methods in order to determine the correct order of nucleotide bases in a DNA macromolecule using sequencing machines. Ten years ago, sequencing was based on a single type of sequencing that is Sanger sequencing. In 2005, Next Generation Sequencing Technologies emerged and changed the view of the analysis and understanding of living beings. Over the last decade, considerable progress has been made on new sequencing machines.</h5>
+        </div>
+        <section class="container" style="margin-left: -1.5cm;">
+            <div class="container my-3 py-5 text-center">
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row ">
+                            <div class="col-lg-8 d-flex  col-md-7">
+                               
+                                <div class="card m-5 col-5" >
+                                    <a target="_blank" href="https://www.longdom.org/scholarly/bioinformatics-tools-journals-articles-ppts-list-2872.html" style="text-decoration-line: none;" >
+                                    <div class="card-body">
+                                        <img src="images/lab.jpg" alt="" class="rounded-circle img-fluid h-75 w-75 mb-3">
+                                        <h3 class="txtblue font-weight-bold" id="#main">The sequence of sequencers: The history of sequencing DNA
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer bg-white text-black-50">
+                                        <p style="text-align: left;">Bioinformatics tools are software programs that are designed for extracting the meaningful information from the mass of molecular biology / biological databases & to carry out sequence or structural analysis.These can be classified as homology and similarity tools, protein functional analysis tools, sequence analysis tools and miscellaneous tools. </p>
+                                       </div>
+                                    </a>
+                                </div>
+        
+                                <div class="card m-5 col-5">
+                                    <a target="_blank" href="https://www.thermofisher.com/eg/en/home/life-science/sequencing/next-generation-sequencing/ngs-library-preparation-illumina-systems.html?ef_id=CjwKCAiA8bqOBhANEiwA-sIlN6P3Ab_OTZBSSWlxDRvfDHpFqUdRdG41PPYYl6QtZAPk99T6CxTvHxoCPncQAvD_BwE:G:s&s_kwcid=AL!3652!3!560074728900!e!!g!!illumina%20sequencing&cid=bid_mol_rng_r01_co_cp1358_pjt0000_bid00000_0se_gaw_nt_lgn_awa&gclid=CjwKCAiA8bqOBhANEiwA-sIlN6P3Ab_OTZBSSWlxDRvfDHpFqUdRdG41PPYYl6QtZAPk99T6CxTvHxoCPncQAvD_BwE"style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/lab.jpg" alt="" class="rounded-circle w-75 h-75 img-fluid mb-3">
+                                       <h3 class="txtblue font-weight-bold">Illumina sequencing</h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p  style="text-align: left;">A biological research paper is a form of communication in which the investigator succinctly presents and interprets data collected in an investigation. Writing such papers is similar to the
+                                        writing in other scientific disciplines except that the format will differ as will the criteria for grading. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               <div class="card m-5 col-5" >
+                                 <a target="_blank" href="https://www.pacb.com/smrt-science/smrt-sequencing/" style="text-decoration-line: none;" >
+                                   <div class="card-body">
+                                       <img src="images/lab.jpg" alt="" class="rounded-circle w-100 h-75 img-fluid  mb-3">
+                                       <h3 class="txtblue font-weight-bold">PacBio sequencing
+                                    </h3>
+                                   </div>
+                                   <div class="card-footer bg-white text-black-50">
+                                    <p style="text-align: left;">DNA sequencing process utilizes biochemical methods in order to determine the correct order of nucleotide bases in a DNA macromolecule using sequencing machines. Next Generation Sequencing Technologies emerged and changed the view of the analysis and understanding of living beings. </p>
+                                   </div>
+                                </a>
+                               </div>
+                               
+                               
+                    </div>
+                </div>
+            </div>
+        </section>
+     </fieldset>
+ </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+  <section class="footer p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="info">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="links">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twiteer</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagrm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="emails">
+                    <ul>
+                        <li><a href="#">457 Ray New York  America </a></li>
+                        <li><a href="#">+44 345 678 903  </a></li>
+                        <li><a href="#">adobex@mail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of section footer -->
+
+
+
+</html>

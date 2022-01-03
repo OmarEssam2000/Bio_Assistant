@@ -1,0 +1,203 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> bio assistant</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/lightGallery.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+
+        *{margin: 0;padding: 0; }
+       .bg-blue{background-color: #45748C;}
+       .bg-red{background-color: #AD5258;}
+       .bg-yellow{background-color: #EF972C;}
+       .back{background-image: url(images/back.jpg);*margin: 0;*padding: 0; background-size: 100%100%; background-attachment: fixed;background-repeat: no-repeat;}
+       .txtblue{color: #45748C;}
+       .fontlogo{ font-family: Segoe Print;color: #45748C;font-size: 66;}                           
+      .searchbox{width: 340px;height: 50px;padding: 0 25px;border-radius: 10px 0 0 10px;} 
+      .searchbtn{border-radius: 0 10px 10px 0;height:50px ;width: 150px; ;} 
+      .put{  z-index: 1; background-color: white;border-radius: 100%;border: 1px solid #45748C ; text-align: center;margin-bottom:90px ;position: absolute; font-size: large; width: 80px;height: 80px;}                         
+      .btnn{ width: 120px;height: 100px; background-color:white;color: #45748C; font-size: 13px;text-align: center;border-radius: 4px;}
+      .btnn:hover{ color: white;background-color: #45748C;border:3px solid white;font-size: 15px;}
+      .findbtn:hover{border: 4px solid #AD5258;}
+   
+    </style>
+
+    <title>sequences</title>
+</head>
+
+<body class="back">
+    <!--navbar-->
+    <header>
+        <nav class="navbar  navbar-light bg-light  ">
+            <div class=" container-fluid " >
+                <div class=" d-inline-flex ">
+                    <img src="images/logo.png" width="60" height="60" class="ml-3 " /> 
+                    <a class="navbar-brand txtblue mb-1"><h3 class="fontlogo" ><b>Bio Assistant</b> </h3></a>
+                 </div>
+              <div class="navbar " style="border: red;">
+                  <nav class=" navbar  navbar-light bg-light">
+                        <div class=" container-fluid">
+                          <form class="d-inline-flex">
+                            <input class="form-control me-2 text-dark searchbox" type="search" placeholder="Search" aria-label="Search" title="Search !">
+                            <button class="btn bg-blue searchbtn" type="submit"><img src="images/search icon.png" width="40" height="40"></button>
+                          </form>
+                          <a href="index.html"><h3>Log out !</h3></a>
+                       </div>
+                   </nav>
+              </div>
+            </div>
+        </nav>
+     </header>
+
+    <!--Start Section Nav-->
+    <section class="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <ul class="order d-flex justify-content-between align-items-center">
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="sequences.html">MySequence</a></li>
+                    <li><a href="learning2.html">Learning</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="list d-flex justify-content-between align-items-center">
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End of section nav-->
+
+
+
+
+
+<!--order select-->
+
+<div class="order" >
+     <select class="form-select  txtblue font-weight-bold m-lg-5 " aria-label="Default select example"  style="height: 40px;width: 150px;border-radius: 10px;">
+            <option selected class="txtblue font-weight-bold text-center "> Sorted by:</option>
+            <option value="latest" class="txtblue font-weight-bold text-center "> latest </option>
+            <option value="oldest" class="txtblue font-weight-bold text-center "> oldest </option>
+      </select>
+</div>
+
+
+
+
+<!--saved card-->
+<a href="home.html " style="text-decoration-line: none;" >
+    <div class="bg-white mt-5  container-lg p-5 ">
+        <fieldset class=" container card"  >
+            <legend class=" w-50"><h1 class="txtblue font-weight-bold ml-5 ">DNA TO RNA:</h1> </legend>
+            <div class="container card p-lg-5 border-white ">
+               <label class="put  txtblue font-weight-bold"><br>INPUT</label>
+               <br><br>
+               <label class="bg-blue card-body rounded text-white pb-5 mt-1 " name= "input_seq"  >AAAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTGAGAT</label>
+             </div>
+             <div class="container card  p-lg-5 border-white ">
+                <label class="put  txtblue font-weight-bold"><br>OUTPUT</label>
+                <br><br>
+                <label class="bg-blue card-body rounded text-white pb-5 mt-1" name= "output_seq">AAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAG</label>
+             </div>
+         </fieldset>
+     </div>
+</a>
+
+
+
+
+<a href="home.html " style="text-decoration-line: none;" >
+      <div class="bg-white mt-5 container-lg p-5 ">
+            <fieldset class=" container card"  >
+                <legend class=" w-50"><h1 class="txtblue font-weight-bold ml-5 ">Duplicate:</h1> </legend>
+               <div class="container card p-lg-5 border-white ">
+                     <label class="put  txtblue font-weight-bold"><br>INPUT</label>
+                     <br><br>
+                     <label class="bg-blue card-body rounded text-white pb-5 mt-1" name= "input_seq"  >AAAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTGAGAT</label>
+                 </div>
+                <div class="container card  p-lg-5 border-white ">
+                     <label class="put  txtblue font-weight-bold"><br>OUTPUT</label>
+                     <br><br>
+                     <label class="bg-blue card-body rounded text-white pb-5 mt-1" name= "output_seq">AAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAGAAATTTTTTCCCCCGGGTAGATTCGGATGGATGCGGCTGAG</label>
+                 </div>
+             </fieldset>
+      </div>
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+  <section class="footer p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="info">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="links">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twiteer</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagrm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="emails">
+                    <ul>
+                        <li><a href="#">457 Ray New York  America </a></li>
+                        <li><a href="#">+44 345 678 903  </a></li>
+                        <li><a href="#">adobex@mail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of section footer -->
+
+
+
+</html>
