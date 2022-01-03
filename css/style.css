@@ -1,0 +1,442 @@
+/*Style General*/
+:root{
+    --one:#AD5258  ;
+    --two:#45748C ;
+    --three:#EF972C;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    overflow-x: hidden;
+}
+/*End of style General*/
+
+/*Start style Bio */
+.bio .assistant{
+    cursor: pointer;
+}
+.bio .assistant img{
+    width:50px;
+}
+.bio .assistant p ,.groundsign .sign p{
+    font-weight: bold;
+    color:var(--two);
+    font-style:italic;
+    font-size:23px;
+    display: inline-block;
+}
+.bio .searchfield input[type="search"]{
+    width:340px;
+    padding:10px;
+}
+.bio .searchfield .input-group .btn{
+    background-color:var(--two);
+    color:white;
+    width:100px;
+    font-size:20px;
+}
+.bio .sign a {
+    font-size:20px;
+    font-weight:bold;
+    color:var(--two);
+}
+/*End style Bio*/
+
+
+/*Start of Nav section*/
+.navbar{
+    background-color: var(--two);
+}
+.navbar .order , .list {
+    list-style: none;
+}
+.navbar .order li {
+    margin:0px 55px;
+    padding:5px;
+}
+.navbar .list li{
+    margin:0px 10px;
+}
+.navbar .order li a ,.list li a{
+    text-decoration: none;
+    color:white;
+}
+.navbar .list li a{
+    font-size:20px;
+}
+/*End of Nav section*/
+
+/*Start of style bioground section*/
+.bioground{
+    background-image: url(../img/pexels-rfstudio-3825527.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height:80vh;
+}
+.bioground .overlay ,.groundsign .overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index:0;
+}
+.bioground .h2 {
+    z-index:5;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform:translate(-10%,-10%);
+}
+.bioground .h2 h2{
+    font-size:40px;
+    font-weight: 700;
+}
+.bioground button{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: var(--three);
+    text-align: center;
+    padding:15px 30px;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius:10px;
+}
+.bioground button:hover{
+background-color: rgba(239,151,44,0.8);
+}
+/*End of style bioground section*/
+
+/*Start Dna */
+.dna p {
+    font-size:25px;
+    color:var(--one);
+    font-weight:500;
+}
+.dna .bttn button{
+    background-color: var(--three);
+    text-align: center;
+    padding:15px 30px;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius:10px;
+}
+.dna .bttn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.dna .bttn button:hover{
+    background-color: rgba(239,151,44,0.8);
+    }
+/*End dna*/
+
+/*Start of style paper*/
+.paper img{
+    width:100%;
+    border-radius: 10px;
+}
+/* .paper .imgbox{
+    position: relative;
+}
+ */
+.paper .team-item{
+    margin:15px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    ;
+    border-radius: 10px;
+    text-align:center;
+}
+.paper .team-item1{
+    margin:15px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    ;
+    border-radius: 10px;
+    text-align:center;
+    width:50%;
+}
+.paper .imgbox{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.team-item .imgbox img{
+    width:100%;
+}
+.paper .imgbox::before{
+    content:"";
+    position: absolute;
+    left:0;
+    top:0;
+    box-sizing:border-box;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.6);
+    transform:translateX(-100%);
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+.team-item:hover .imgbox::before{
+    transform: translateX(0%);
+}
+.team-item1:hover .imgbox::before{
+    transform: translateX(0%);
+}
+.team-item .social ,.team-item1 .social{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+}
+.team-item .social a ,.team-item1 .social a{
+    display: block;
+    width:100%;
+    text-decoration: none;
+    color:#fff;
+    font-size:25px;
+    font-weight: 600;
+    transition: opacity 0.5s ease,margin 0.3s ease;
+    opacity: 0;
+}
+.team-item:hover .social a{
+    transition-delay: 0.3s;
+    opacity:1;
+    margin:3px 0;
+}
+.team-item1:hover .social a{
+    transition-delay: 0.3s;
+    opacity:1;
+    margin:3px 0;
+}
+
+/*End of style paper*/
+
+/*Start style footer*/
+.footer{
+    background-color: var(--two);
+    margin-top:120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .info ul , .links ul ,.emails ul{
+    list-style: none;
+}
+.footer .info ul li , .links ul li ,.emails ul li{
+    margin:10px 0;
+    padding:2px ;
+}
+.footer .info ul li a , .links ul li a ,.emails ul li a{
+    text-decoration: none;
+    color:white;
+}
+.footer .links ul li  i{
+    margin-right:10px;
+}
+/*End style footer*/
+
+/*Start style profile page*/
+
+/*Start profile image*/
+.profile .profileimage{ 
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.profile .profileimage img{
+    width:350px;
+    height:350px;
+}
+.profile .profileimage .real{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.profile .profileimage .real div{
+    background-color:rgb(255, 250, 250);
+    color:var(--two);
+    width:70px;
+    height:70px;
+    position: absolute;
+    top:5%;
+    left:75%;
+    display:inline-block;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:24px;
+}
+.profile .profileimage .real div::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    box-sizing:border-box;
+    background-color: rgba(0,0,0,0.6);
+    transform:translateX(-100%);
+    transition: all 0.5s ease;
+    border-radius: 50%;
+}
+.profile .profileimage .real:hover div::before{
+    transform: translateX(0%);
+}
+.profile .profileimage .real h4{
+    color:var(--two);
+}
+/*End style profileimage*/
+
+/*Start style detail*/
+
+.profile .detail{
+    width:100%;
+    height:100vh;
+    background-color: var(--two);
+    position: relative;
+}
+.profile .detail .instructions{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:85%;
+    height:85%;
+    margin:auto;
+    color:white;
+}
+.profile .detail .instructions form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:30%;
+}
+.profile .detail .instructions form h4{
+    font-weight: 700;
+    margin-bottom:30px;
+}
+.profile .detail .instructions form label{
+    font-size: 30px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.profile .detail .instructions form input[type="text"],input[type="email"] {
+    padding:10px 20px;
+    width:300px;
+    margin-bottom: 10px;
+    outline:none;
+    border: none;
+}
+/*End style detail*/
+
+
+/*End of style profile page */
+
+/*Start of style sign bage*/
+.groundsign{
+    width:100%;
+    height:100vh;
+    background-image: url(../img/pexels-rfstudio-3825527.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.groundsign .sign{
+    z-index:5;
+    background-color: white;
+    width:60%;
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.groundsign .sign img{
+    width:50px;
+}
+.groundsign .sign #ff{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+}
+.groundsign .sign form input[type="text"],input[type="email"] , input[type="password"],input[type="button"]{
+    padding:15px 30px;
+    width:300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    outline:none;
+    border: 2px solid var(--two)
+}
+.groundsign .sign form input[type="button"]{
+    background-color: var(--two);
+    color:white;
+}
+.groundsign .sign p{
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: underline;
+}
+.groundsign .sign p a{
+    color:rgb(241, 95, 95);
+}
+.groundsign .sign .links {
+    border:2px solid var(--two);
+    margin: 15px;
+    padding:5px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groundsign .sign .links i{
+    font-size:40px;
+    color:var(--two);
+}
+.groundsign .sign .links p{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    margin:auto 15px;
+}
+.groundsign .sign .links:hover{
+    background-color: var(--two);
+}
+.groundsign .sign .links:hover p,.groundsign .sign .links:hover i{
+    color: white;
+}
+.groundsign .col-2 .line{
+    width:2px;
+    background-color: var(--two);
+    height:40%;
+    margin:auto;
+}
+.groundsign .col-2 p{
+    text-decoration: none;
+    font-size:25px;
+}
+/*End style sign page*/
